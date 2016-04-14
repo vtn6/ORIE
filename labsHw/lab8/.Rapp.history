@@ -1,0 +1,32 @@
+rm(list = ls())#
+setwd("~/Dropbox/cornell/ORIE4740/labsHw/lab8/")#
+library(ggplot2)  #
+library(ISLR)#
+library(reshape2)#
+#
+hospitals = read.csv("hospital.csv",header=T)#
+#
+orthoClust = subset.data.frame(hospitals, select = -c(ZIP,HID,CITY,STATE))#
+orthoClust = log(orthoClust + 1)#
+orthoClust = scale(orthoClust)#
+orthoClust = as.data.frame(orthoClust)#
+#
+minOrthoKMeans = c()#
+orthoKmeans = kmeans(orthoClust,3)#
+minCost = sum(orthoKmeans$withinss)#
+print(minCost)#
+for(i in 1:20)#
+{#
+  orthoKmeansTemp = kmeans(orthoClust,3)#
+  foo = sum(orthoKmeansTemp$withinss)#
+  if(foo<minCost)#
+  {#
+    minCost = foo#
+    orthoKmeans = orthoKmeansTemp#
+  }#
+}#
+#
+print(sum(orthoKmeans$withinss))#
+#
+print(orthoKmeans$centers)
+pairs(orthoClust,col = orthoKmeans$cluster)

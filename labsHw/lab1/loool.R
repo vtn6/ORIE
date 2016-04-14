@@ -1,0 +1,5 @@
+rm(list = ls())
+setwd("~/Dropbox/cornell/ORIE4740/coolDataSets/practiceFusion/trainingSet")
+allergyData = read.csv("training_SyncAllergy.csv")
+diagnosisData = read.csv("training_SyncDiagnosis.csv")
+medicationData = read.csv("training_SyncMedication.csv")

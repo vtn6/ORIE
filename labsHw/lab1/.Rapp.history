@@ -1,0 +1,15 @@
+setwd("~/Dropbox/cornell/ORIE4740/labsHw/lab1")
+read.table("olive-train.dat")
+source("/Users/Vincent/Dropbox/cornell/ORIE4740/labsHw/lab1/firstScript.R")
+clear all
+Clear All
+clc
+rm()
+colnames(oliveData)
+source("/Users/Vincent/Dropbox/cornell/ORIE4740/labsHw/lab1/firstScript.R")
+oliveData
+oliveData
+source("/Users/Vincent/Dropbox/cornell/ORIE4740/labsHw/lab1/firstScript.R")
+oliveData
+dim(oliveData)
+source("/Users/Vincent/Dropbox/cornell/ORIE4740/labsHw/lab1/firstScript.R")

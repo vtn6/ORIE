@@ -1,0 +1,15 @@
+Columns in Olive Oils Data Sets:
+
+1. Region South, North or Sardinia
+2. Area Sub-regions within the larger regions (North and South Apulia,
+Calabria, Sicily, Inland and Coastal Sardinia, Umbria, East and
+West Liguria)
+3. Palmitic Acid Percentage in sample
+4. Palmitoleic Acid Percentage in sample
+5. Stearic Acid Percentage in sample
+6. Oleic Acid Percentage in sample
+7. Linoleic Acid Percentage in sample
+8. Linolenic Acid Percentage in sample
+9. Arachidic Acid Percentage in sample
+10. Eicosenoic Acid Percentage in sample
+

@@ -1,0 +1,13 @@
+rm(list = ls())
+#setwd("~/Downloads/chsi_dataset/")
+setwd("~/Downloads/")
+fooFrame1 = read.csv("Data_Dictionary.csv")
+fooFrame2 = read.csv("Diagnostic_Features.csv")
+fooFrame3 = read.csv("Code_List.csv")
+# fooFrame1 = read.csv("MDS_UPDRS_Part_I.csv")
+# fooFrame2 = read.csv("PASE_-_Household_Activity.csv")
+# fooFrame3 = read.csv("TAP-PD_OPDM_Assessment.csv")
+# fooFrame4 = read.csv("MDS_UPDRS_Part_I.csv")
+
+# print(head(emergencyFrame))
+# print(names(emergencyFrame))
